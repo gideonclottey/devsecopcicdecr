@@ -35,6 +35,13 @@ storage to containers.
 > Compare this with the S3 version, whose URL is a permanent property of the bucket. Getting a stable
 > address back is the main thing an ALB would buy here.
 
+## The deployed site
+
+![The CloudStudy Ltd home page served by nginx from an ECS Fargate task](docs/site-home.png)
+
+The same HTML as the S3 version, reaching the browser by a completely different route: baked into a
+container image, pulled from ECR, and served by nginx on Fargate.
+
 ## Pipeline
 
 ```mermaid
